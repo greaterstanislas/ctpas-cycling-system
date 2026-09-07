@@ -1,0 +1,76 @@
+name: ctpas_mobile
+description: Cycling Tracking & Performance Analysis System mobile app.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management & Navigation
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  
+  # API & HTTP
+  dio: ^5.3.1
+  retrofit: ^4.1.1
+  
+  # Real-time
+  web_socket_channel: ^2.4.0
+  
+  # Local Storage
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+  
+  # Location & GPS
+  geolocator: ^9.0.2
+  google_maps_flutter: ^2.5.0
+  
+  # Background Tasks
+  background_locator_2: ^0.0.14
+  
+  # Date & Time
+  intl: ^0.19.0
+  
+  # Serialization
+  json_annotation: ^4.8.1
+  
+  # UI
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.7
+  
+  # Security
+  flutter_secure_storage: ^9.0.0
+  
+  # Notifications
+  flutter_local_notifications: ^14.1.1
+  firebase_messaging: ^14.6.1
+  
+  # Logging
+  logger: ^2.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_linter: ^3.0.0
+  build_runner: ^2.4.6
+  retrofit_generator: ^7.0.4
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
